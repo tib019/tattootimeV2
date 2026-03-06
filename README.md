@@ -1,11 +1,11 @@
-# TattooTime V2 - Tattoo Termin App
+# TattooTime V2 – Tattoo Termin App
 
 [![React](https://img.shields.io/badge/React-18+-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com)
 [![Material-UI](https://img.shields.io/badge/Material--UI-007FFF?style=for-the-badge&logo=mui&logoColor=white)](https://mui.com)
 
-**TattooTime** ist eine moderne Webanwendung zur Verwaltung von Tattoo-Terminen. Sie bietet eine intuitive Oberflaeche fuer Kunden und einen leistungsstarken Admin-Bereich fuer Studio-Betreiber.
+**TattooTime** ist eine moderne Webanwendung zur Verwaltung von Tattoo-Terminen. Sie bietet eine intuitive Oberfläche fuer Kunden und einen leistungsstarken Admin-Bereich fuer Studio-Betreiber.
 
 ---
 
@@ -34,15 +34,9 @@
 
 ## Installation & Entwicklung
 
-Voraussetzungen: Node.js >= 16, Firebase CLI
 
-```bash
-git clone https://github.com/tib019/tattootimeV2.git
-cd tattootimeV2/tattootime
-npm install
-# Firebase-Konfiguration in src/services/firebase.ts eintragen
-npm start
-```
+> tattootime@0.1.0 start
+> react-scripts start
 
 Die App laeuft dann unter http://localhost:3000.
 
@@ -50,13 +44,16 @@ Die App laeuft dann unter http://localhost:3000.
 
 ## Deployment (Firebase Hosting)
 
-```bash
-npm install -g firebase-tools
-firebase login
-firebase init
-npm run build
-firebase deploy --only hosting
-```
+
+
+---
+
+## Admin-Rolle vergeben
+
+Die Admin-Rolle kann auf zwei Wegen vergeben werden:
+
+1. In Firestore (Collection ) das Feld  auf  setzen
+2. Cloud Function  mit der E-Mail-Adresse aufrufen
 
 ---
 
@@ -64,8 +61,8 @@ firebase deploy --only hosting
 
 | Funktion | Beschreibung | Input |
 |---|---|---|
-| addAdminRole | Setzt Admin-Rolle fuer einen User | { email: string } |
-| bookSlot | Bucht einen Slot und versendet Bestaedigungsmails | { slotId, serviceType, clientName, clientEmail } |
+|  | Setzt Admin-Rolle fuer einen User |  |
+|  | Bucht einen Slot und versendet Bestaedigungsmails |  |
 
 ---
 
@@ -73,10 +70,10 @@ firebase deploy --only hosting
 
 | Collection | Beschreibung |
 |---|---|
-| users | User-Daten inkl. Rolle |
-| slots | Termin-Slots (Datum, Zeit, Service, isBooked) |
-| appointments | Gebuchte Termine |
-| mail | E-Mail-Queue fuer Bestaedigungen |
+|  | User-Daten inkl. Rolle |
+|  | Termin-Slots (Datum, Zeit, Service, isBooked) |
+|  | Gebuchte Termine |
+|  | E-Mail-Queue fuer Bestaedigungen |
 
 ---
 
@@ -91,3 +88,9 @@ firebase deploy --only hosting
 ## Autor
 
 **Tobias** - [@tib019](https://github.com/tib019)
+
+---
+
+## Lizenz
+
+Dieses Projekt ist fuer private und Demonstrationszwecke erstellt.
