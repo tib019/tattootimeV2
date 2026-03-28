@@ -11,7 +11,7 @@ export class ServiceTestSuite {
   // Test der Preisberechnung
   static async testPricingService(): Promise<boolean> {
     try {
- console.log(' Teste PricingService...');
+ console.log('Teste PricingService...');
       
       // Standard-Preisregeln erstellen
       await PricingService.createDefaultPricingRules();
@@ -37,10 +37,10 @@ export class ServiceTestSuite {
         throw new Error('Preisberechnung fehlgeschlagen');
       }
       
- console.log(' PricingService Test erfolgreich');
+ console.log('PricingService Test erfolgreich');
       return true;
     } catch (error) {
- console.error(' PricingService Test fehlgeschlagen:', error);
+ console.error('PricingService Test fehlgeschlagen:', error);
       return false;
     }
   }
@@ -48,7 +48,7 @@ export class ServiceTestSuite {
   // Test des Material-Services
   static async testMaterialService(): Promise<boolean> {
     try {
- console.log(' Teste MaterialService...');
+ console.log('Teste MaterialService...');
       
       // Standard-Materialien erstellen
       await MaterialService.createDefaultMaterials();
@@ -70,10 +70,10 @@ export class ServiceTestSuite {
         throw new Error('Lagerstand-Update fehlgeschlagen');
       }
       
- console.log(' MaterialService Test erfolgreich');
+ console.log('MaterialService Test erfolgreich');
       return true;
     } catch (error) {
- console.error(' MaterialService Test fehlgeschlagen:', error);
+ console.error('MaterialService Test fehlgeschlagen:', error);
       return false;
     }
   }
@@ -81,7 +81,7 @@ export class ServiceTestSuite {
   // Test des Payment-Services
   static async testPaymentService(): Promise<boolean> {
     try {
- console.log(' Teste PaymentService...');
+ console.log('Teste PaymentService...');
       
       // Test-Zahlung erstellen
       const paymentId = await PaymentService.createPayment({
@@ -104,10 +104,10 @@ export class ServiceTestSuite {
         throw new Error('Zahlung nicht gefunden');
       }
       
- console.log(' PaymentService Test erfolgreich');
+ console.log('PaymentService Test erfolgreich');
       return true;
     } catch (error) {
- console.error(' PaymentService Test fehlgeschlagen:', error);
+ console.error('PaymentService Test fehlgeschlagen:', error);
       return false;
     }
   }
@@ -115,7 +115,7 @@ export class ServiceTestSuite {
   // Test des Notification-Services
   static async testNotificationService(): Promise<boolean> {
     try {
- console.log(' Teste NotificationService...');
+ console.log('Teste NotificationService...');
       
       // Standard-Nachsorge-Templates erstellen
       await NotificationService.createDefaultAftercareTemplates();
@@ -140,10 +140,10 @@ export class ServiceTestSuite {
         throw new Error('Benachrichtigung konnte nicht erstellt werden');
       }
       
- console.log(' NotificationService Test erfolgreich');
+ console.log('NotificationService Test erfolgreich');
       return true;
     } catch (error) {
- console.error(' NotificationService Test fehlgeschlagen:', error);
+ console.error('NotificationService Test fehlgeschlagen:', error);
       return false;
     }
   }
@@ -151,7 +151,7 @@ export class ServiceTestSuite {
   // Test des Review-Services
   static async testReviewService(): Promise<boolean> {
     try {
- console.log(' Teste ReviewService...');
+ console.log('Teste ReviewService...');
       
       // Bewertungsstatistiken abrufen
       const stats = await ReviewService.getReviewStatistics();
@@ -160,10 +160,10 @@ export class ServiceTestSuite {
         throw new Error('Bewertungsstatistiken sind ungültig');
       }
       
- console.log(' ReviewService Test erfolgreich');
+ console.log('ReviewService Test erfolgreich');
       return true;
     } catch (error) {
- console.error(' ReviewService Test fehlgeschlagen:', error);
+ console.error('ReviewService Test fehlgeschlagen:', error);
       return false;
     }
   }
@@ -171,7 +171,7 @@ export class ServiceTestSuite {
   // Test des Customer-Services
   static async testCustomerService(): Promise<boolean> {
     try {
- console.log(' Teste CustomerService...');
+ console.log('Teste CustomerService...');
       
       // Kundenstatistiken abrufen
       const stats = await CustomerService.getCustomerStatistics();
@@ -180,10 +180,10 @@ export class ServiceTestSuite {
         throw new Error('Kundenstatistiken sind ungültig');
       }
       
- console.log(' CustomerService Test erfolgreich');
+ console.log('CustomerService Test erfolgreich');
       return true;
     } catch (error) {
- console.error(' CustomerService Test fehlgeschlagen:', error);
+ console.error('CustomerService Test fehlgeschlagen:', error);
       return false;
     }
   }
@@ -191,7 +191,7 @@ export class ServiceTestSuite {
   // Test des Admin-Services
   static async testAdminService(): Promise<boolean> {
     try {
- console.log(" Teste AdminService...");
+ console.log("Teste AdminService...");
       
       // Test-E-Mail für Admin-Tests
       const testEmail = "test-admin@example.com";
@@ -202,7 +202,7 @@ export class ServiceTestSuite {
         if (!addResult.message.includes("Adminrechte gesetzt")) {
           throw new Error("Admin-Rolle konnte nicht hinzugefügt werden");
         }
- console.log(" Admin-Rolle hinzugefügt:", addResult.message);
+ console.log("Admin-Rolle hinzugefügt:", addResult.message);
       } catch (error: any) {
         // Falls der Benutzer nicht existiert oder andere Fehler auftreten
  console.log("️ Admin-Rolle hinzufügen fehlgeschlagen (erwartet für Test):", error.message);
@@ -214,7 +214,7 @@ export class ServiceTestSuite {
         if (!removeResult.message.includes("Adminrechte entfernt")) {
           throw new Error("Admin-Rolle konnte nicht entfernt werden");
         }
- console.log(" Admin-Rolle entfernt:", removeResult.message);
+ console.log("Admin-Rolle entfernt:", removeResult.message);
       } catch (error: any) {
         // Falls der Benutzer nicht existiert oder andere Fehler auftreten
  console.log("️ Admin-Rolle entfernen fehlgeschlagen (erwartet für Test):", error.message);
@@ -233,10 +233,10 @@ export class ServiceTestSuite {
         throw new Error("Non-Admin-Status-Prüfung fehlgeschlagen");
       }
       
- console.log(" AdminService Test erfolgreich");
+ console.log("AdminService Test erfolgreich");
       return true;
     } catch (error) {
- console.error(" AdminService Test fehlgeschlagen:", error);
+ console.error("AdminService Test fehlgeschlagen:", error);
       return false;
     }
   }
@@ -244,7 +244,7 @@ export class ServiceTestSuite {
   // Test des Initialization-Services
   static async testInitializationService(): Promise<boolean> {
     try {
- console.log(' Teste InitializationService...');
+ console.log('Teste InitializationService...');
       
       // System-Status abrufen
       const status = await InitializationService.getSystemStatus();
@@ -253,10 +253,10 @@ export class ServiceTestSuite {
         throw new Error('System-Status ist ungültig');
       }
       
- console.log(' InitializationService Test erfolgreich');
+ console.log('InitializationService Test erfolgreich');
       return true;
     } catch (error) {
- console.error(' InitializationService Test fehlgeschlagen:', error);
+ console.error('InitializationService Test fehlgeschlagen:', error);
       return false;
     }
   }
@@ -267,7 +267,7 @@ export class ServiceTestSuite {
     results: Record<string, boolean>;
     summary: string;
   }> {
- console.log(' Starte Service-Tests...\n');
+ console.log('Starte Service-Tests...\n');
     
     const results = {
       pricingService: await this.testPricingService(),

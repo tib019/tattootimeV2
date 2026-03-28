@@ -10,17 +10,17 @@ export class InitializationService {
 
       // Standard-Preisregeln erstellen
       await this.initializePricingRules();
- console.log(' Preisregeln initialisiert');
+ console.log('Preisregeln initialisiert');
 
       // Standard-Materialien erstellen
       await this.initializeMaterials();
- console.log(' Materialien initialisiert');
+ console.log('Materialien initialisiert');
 
       // Standard-Nachsorge-Templates erstellen
       await this.initializeAftercareTemplates();
- console.log(' Nachsorge-Templates initialisiert');
+ console.log('Nachsorge-Templates initialisiert');
 
- console.log(' Alle Standarddaten erfolgreich initialisiert!');
+ console.log('Alle Standarddaten erfolgreich initialisiert!');
     } catch (error) {
       console.error('Fehler bei der Initialisierung der Standarddaten:', error);
       throw error;
