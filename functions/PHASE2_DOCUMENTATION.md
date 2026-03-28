@@ -1,10 +1,10 @@
 # Phase 2 - Cloud Functions Integration
 
-## ✅ **Phase 2 erfolgreich implementiert!**
+## **Phase 2 erfolgreich implementiert!**
 
 Alle erweiterten Features wurden in Cloud Functions integriert.
 
-## 🚀 **Neue Cloud Functions:**
+## **Neue Cloud Functions:**
 
 ### **1. Erweiterte `bookSlot` Function**
 **Endpoint:** `bookSlot` (Callable Function)
@@ -19,11 +19,11 @@ Alle erweiterten Features wurden in Cloud Functions integriert.
 - `notes?: string` - Notizen
 
 **Neue Features:**
-- ✅ **Automatische Preisberechnung** basierend auf Multiplikatoren
-- ✅ **Kundenhistorie** wird automatisch erstellt
-- ✅ **Terminerinnerungen** werden geplant (24h vorher)
-- ✅ **Nachsorge-Benachrichtigungen** werden geplant (24h nachher)
-- ✅ **Erweiterte E-Mails** mit Preisübersicht und Details
+- **Automatische Preisberechnung** basierend auf Multiplikatoren
+- **Kundenhistorie** wird automatisch erstellt
+- **Terminerinnerungen** werden geplant (24h vorher)
+- **Nachsorge-Benachrichtigungen** werden geplant (24h nachher)
+- **Erweiterte E-Mails** mit Preisübersicht und Details
 
 ### **2. `processPayment` Function**
 **Endpoint:** `processPayment` (Callable Function)
@@ -35,10 +35,10 @@ Alle erweiterten Features wurden in Cloud Functions integriert.
 - `paymentType: 'deposit' | 'remaining' | 'full'` - Zahlungstyp
 
 **Features:**
-- ✅ **Zahlungsverarbeitung** mit Status-Updates
-- ✅ **Termin-Status** wird automatisch aktualisiert
-- ✅ **Kundenhistorie** wird erstellt
-- ✅ **Benutzer-Autorisierung** (nur eigene Termine)
+- **Zahlungsverarbeitung** mit Status-Updates
+- **Termin-Status** wird automatisch aktualisiert
+- **Kundenhistorie** wird erstellt
+- **Benutzer-Autorisierung** (nur eigene Termine)
 
 ### **3. `recordMaterialUsage` Function**
 **Endpoint:** `recordMaterialUsage` (Callable Function)
@@ -48,11 +48,11 @@ Alle erweiterten Features wurden in Cloud Functions integriert.
 - `materials: Array<{ materialId: string; quantityUsed: number }>` - Materialverbrauch
 
 **Features:**
-- ✅ **Materialverbrauch** wird erfasst
-- ✅ **Lagerstand** wird automatisch reduziert
-- ✅ **Kostenberechnung** für jeden Termin
-- ✅ **Kundenhistorie** wird erstellt
-- ✅ **Admin-only** Zugriff
+- **Materialverbrauch** wird erfasst
+- **Lagerstand** wird automatisch reduziert
+- **Kostenberechnung** für jeden Termin
+- **Kundenhistorie** wird erstellt
+- **Admin-only** Zugriff
 
 ### **4. `createReview` Function**
 **Endpoint:** `createReview` (Callable Function)
@@ -64,32 +64,32 @@ Alle erweiterten Features wurden in Cloud Functions integriert.
 - `isAnonymous: boolean` - Anonyme Bewertung
 
 **Features:**
-- ✅ **Bewertungsvalidierung** (nur nach echten Terminen)
-- ✅ **Zeitvalidierung** (mindestens 24h nach Termin)
-- ✅ **Benutzer-Autorisierung** (nur eigene Termine)
-- ✅ **Duplikat-Prüfung** (nur eine Bewertung pro Termin)
-- ✅ **Kundenhistorie** wird erstellt
+- **Bewertungsvalidierung** (nur nach echten Terminen)
+- **Zeitvalidierung** (mindestens 24h nach Termin)
+- **Benutzer-Autorisierung** (nur eigene Termine)
+- **Duplikat-Prüfung** (nur eine Bewertung pro Termin)
+- **Kundenhistorie** wird erstellt
 
 ### **5. `initializeDefaultData` Function**
 **Endpoint:** `initializeDefaultData` (Callable Function)
 
 **Features:**
-- ✅ **Standard-Preisregeln** werden erstellt
-- ✅ **Standard-Materialien** werden erstellt
-- ✅ **Standard-Nachsorge-Templates** werden erstellt
-- ✅ **Admin-only** Zugriff
+- **Standard-Preisregeln** werden erstellt
+- **Standard-Materialien** werden erstellt
+- **Standard-Nachsorge-Templates** werden erstellt
+- **Admin-only** Zugriff
 
 ### **6. `processScheduledNotifications` Function**
 **Endpoint:** `processScheduledNotifications` (Scheduled Function)
 
 **Features:**
-- ✅ **Automatische Ausführung** alle 1 Stunde
-- ✅ **Fällige Benachrichtigungen** werden verarbeitet
-- ✅ **Multi-Kanal-Support** (E-Mail, WhatsApp, Telegram)
-- ✅ **Batch-Verarbeitung** für Performance
-- ✅ **Fehlerbehandlung** für jede Benachrichtigung
+- **Automatische Ausführung** alle 1 Stunde
+- **Fällige Benachrichtigungen** werden verarbeitet
+- **Multi-Kanal-Support** (E-Mail, WhatsApp, Telegram)
+- **Batch-Verarbeitung** für Performance
+- **Fehlerbehandlung** für jede Benachrichtigung
 
-## 📊 **Neue Firestore Collections:**
+## **Neue Firestore Collections:**
 
 ### **Automatisch erstellt:**
 - `pricing_rules` - Preisregeln für dynamische Berechnung
@@ -101,7 +101,7 @@ Alle erweiterten Features wurden in Cloud Functions integriert.
 - `reviews` - Bewertungen
 - `customer_history` - Kundenhistorie
 
-## 🔧 **Verwendung der neuen Functions:**
+## **Verwendung der neuen Functions:**
 
 ### **Termin mit erweiterten Features buchen:**
 ```typescript
@@ -169,48 +169,48 @@ const initializeDefaultData = httpsCallable(functions, 'initializeDefaultData');
 const result = await initializeDefaultData({});
 ```
 
-## 🛡️ **Sicherheitsfeatures:**
+## ️ **Sicherheitsfeatures:**
 
 ### **Authentifizierung:**
-- ✅ Alle Functions erfordern Authentifizierung
-- ✅ Admin-Functions prüfen Admin-Rolle
-- ✅ Benutzer können nur eigene Daten bearbeiten
+- Alle Functions erfordern Authentifizierung
+- Admin-Functions prüfen Admin-Rolle
+- Benutzer können nur eigene Daten bearbeiten
 
 ### **Validierung:**
-- ✅ Eingabedaten werden validiert
-- ✅ Geschäftslogik wird geprüft
-- ✅ Fehlerbehandlung für alle Szenarien
+- Eingabedaten werden validiert
+- Geschäftslogik wird geprüft
+- Fehlerbehandlung für alle Szenarien
 
 ### **Transaktionale Sicherheit:**
-- ✅ Kritische Operationen in Transaktionen
-- ✅ Rollback bei Fehlern
-- ✅ Konsistente Datenbank-Updates
+- Kritische Operationen in Transaktionen
+- Rollback bei Fehlern
+- Konsistente Datenbank-Updates
 
-## 📈 **Performance-Optimierungen:**
+## **Performance-Optimierungen:**
 
 ### **Batch-Operationen:**
-- ✅ Benachrichtigungen werden in Batches verarbeitet
-- ✅ Datenbank-Updates werden optimiert
-- ✅ Limitierte Abfragen für große Datensätze
+- Benachrichtigungen werden in Batches verarbeitet
+- Datenbank-Updates werden optimiert
+- Limitierte Abfragen für große Datensätze
 
 ### **Caching:**
-- ✅ Preisregeln werden effizient abgerufen
-- ✅ Materialdaten werden optimiert geladen
-- ✅ Redundante Abfragen vermieden
+- Preisregeln werden effizient abgerufen
+- Materialdaten werden optimiert geladen
+- Redundante Abfragen vermieden
 
-## 🔄 **Automatisierte Prozesse:**
+## **Automatisierte Prozesse:**
 
 ### **Scheduled Functions:**
-- ✅ **Benachrichtigungen** werden automatisch verarbeitet
-- ✅ **Terminerinnerungen** werden rechtzeitig gesendet
-- ✅ **Nachsorge-Hinweise** werden automatisch versendet
+- **Benachrichtigungen** werden automatisch verarbeitet
+- **Terminerinnerungen** werden rechtzeitig gesendet
+- **Nachsorge-Hinweise** werden automatisch versendet
 
 ### **Trigger-basierte Updates:**
-- ✅ **Kundenhistorie** wird automatisch erstellt
-- ✅ **Lagerstand** wird automatisch aktualisiert
-- ✅ **Termin-Status** wird automatisch aktualisiert
+- **Kundenhistorie** wird automatisch erstellt
+- **Lagerstand** wird automatisch aktualisiert
+- **Termin-Status** wird automatisch aktualisiert
 
-## 🚀 **Deployment:**
+## **Deployment:**
 
 ### **Functions deployen:**
 ```bash
@@ -224,7 +224,7 @@ firebase deploy --only functions
 firebase functions:config:set scheduler.enabled=true
 ```
 
-## 📋 **Nächste Schritte:**
+## **Nächste Schritte:**
 
 1. **Phase 3:** Frontend-UI-Komponenten
 2. **Phase 4:** Echte API-Integrationen (Stripe, WhatsApp, etc.)
@@ -233,4 +233,4 @@ firebase functions:config:set scheduler.enabled=true
 
 ---
 
-**Phase 2 ist erfolgreich abgeschlossen! Alle erweiterten Features sind jetzt in Cloud Functions verfügbar.** 🎉 
+**Phase 2 ist erfolgreich abgeschlossen! Alle erweiterten Features sind jetzt in Cloud Functions verfügbar.**

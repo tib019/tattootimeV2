@@ -2,11 +2,11 @@
 
 Dieses Dokument beschreibt die neuen erweiterten Features, die zu TattooTime hinzugefügt wurden.
 
-## 🎯 Übersicht
+## Übersicht
 
 Die erweiterten Features wurden **sicher** implementiert, ohne das bestehende System zu beeinträchtigen. Alle neuen Funktionen sind optional und können schrittweise aktiviert werden.
 
-## 📋 Neue Features
+## Neue Features
 
 ### 4. Dynamische Preisberechnung
 - **Service:** `PricingService`
@@ -154,7 +154,7 @@ await ReviewService.createReviewForAppointment(
 );
 ```
 
-## 🚀 Initialisierung
+## Initialisierung
 
 ### Standarddaten erstellen
 ```typescript
@@ -171,7 +171,7 @@ console.log('System initialisiert:', status.isInitialized);
 console.log('Empfehlungen:', status.recommendations);
 ```
 
-## 📊 Neue Firestore Collections
+## Neue Firestore Collections
 
 Die folgenden Collections werden automatisch erstellt:
 
@@ -185,7 +185,7 @@ Die folgenden Collections werden automatisch erstellt:
 - `customer_history` - Kundenhistorie
 - `calendar_sync` - Kalender-Synchronisation
 
-## 🔧 Konfiguration
+## Konfiguration
 
 ### Preisregeln anpassen
 ```typescript
@@ -215,7 +215,7 @@ await MaterialService.createMaterial({
 });
 ```
 
-## 🛡️ Sicherheit
+## ️ Sicherheit
 
 - Alle neuen Features sind **rückwärtskompatibel**
 - Bestehende Daten bleiben unverändert
@@ -223,7 +223,7 @@ await MaterialService.createMaterial({
 - Umfassende Fehlerbehandlung
 - DSGVO-konforme Datenverwaltung
 
-## 📈 Nächste Schritte
+## Nächste Schritte
 
 1. **Phase 2:** Backend-Integration (Cloud Functions)
 2. **Phase 3:** Frontend-UI-Komponenten
