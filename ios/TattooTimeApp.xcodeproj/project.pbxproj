@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC110001 /* TattooTimeAppApp.swift in Sources */             = {isa = PBXBuildFile; fileRef = CC220001 /* TattooTimeAppApp.swift */; };
+		CC110002 /* AppUser.swift in Sources */                      = {isa = PBXBuildFile; fileRef = CC220002 /* AppUser.swift */; };
+		CC110003 /* Appointment.swift in Sources */                  = {isa = PBXBuildFile; fileRef = CC220003 /* Appointment.swift */; };
+		CC110004 /* Slot.swift in Sources */                         = {isa = PBXBuildFile; fileRef = CC220004 /* Slot.swift */; };
+		CC110005 /* PricingRule.swift in Sources */                  = {isa = PBXBuildFile; fileRef = CC220005 /* PricingRule.swift */; };
+		CC110006 /* FirebaseConfig.swift in Sources */               = {isa = PBXBuildFile; fileRef = CC220006 /* FirebaseConfig.swift */; };
+		CC110007 /* FirebaseAuthService.swift in Sources */          = {isa = PBXBuildFile; fileRef = CC220007 /* FirebaseAuthService.swift */; };
+		CC110008 /* FirestoreService.swift in Sources */             = {isa = PBXBuildFile; fileRef = CC220008 /* FirestoreService.swift */; };
+		CC110009 /* AppointmentService.swift in Sources */           = {isa = PBXBuildFile; fileRef = CC220009 /* AppointmentService.swift */; };
+		CC110010 /* SlotService.swift in Sources */                  = {isa = PBXBuildFile; fileRef = CC220010 /* SlotService.swift */; };
+		CC110011 /* UserService.swift in Sources */                  = {isa = PBXBuildFile; fileRef = CC220011 /* UserService.swift */; };
+		CC110012 /* AuthViewModel.swift in Sources */                = {isa = PBXBuildFile; fileRef = CC220012 /* AuthViewModel.swift */; };
+		CC110013 /* AppointmentViewModel.swift in Sources */         = {isa = PBXBuildFile; fileRef = CC220013 /* AppointmentViewModel.swift */; };
+		CC110014 /* BookingViewModel.swift in Sources */             = {isa = PBXBuildFile; fileRef = CC220014 /* BookingViewModel.swift */; };
+		CC110015 /* AdminViewModel.swift in Sources */               = {isa = PBXBuildFile; fileRef = CC220015 /* AdminViewModel.swift */; };
+		CC110016 /* DesignSystem.swift in Sources */                 = {isa = PBXBuildFile; fileRef = CC220016 /* DesignSystem.swift */; };
+		CC110017 /* LoginView.swift in Sources */                    = {isa = PBXBuildFile; fileRef = CC220017 /* LoginView.swift */; };
+		CC110018 /* RegisterView.swift in Sources */                 = {isa = PBXBuildFile; fileRef = CC220018 /* RegisterView.swift */; };
+		CC110019 /* MainTabView.swift in Sources */                  = {isa = PBXBuildFile; fileRef = CC220019 /* MainTabView.swift */; };
+		CC110020 /* DashboardView.swift in Sources */                = {isa = PBXBuildFile; fileRef = CC220020 /* DashboardView.swift */; };
+		CC110021 /* BookingView.swift in Sources */                  = {isa = PBXBuildFile; fileRef = CC220021 /* BookingView.swift */; };
+		CC110022 /* MyAppointmentsView.swift in Sources */           = {isa = PBXBuildFile; fileRef = CC220022 /* MyAppointmentsView.swift */; };
+		CC110023 /* ProfileView.swift in Sources */                  = {isa = PBXBuildFile; fileRef = CC220023 /* ProfileView.swift */; };
+		CC110024 /* AdminAppointmentsView.swift in Sources */        = {isa = PBXBuildFile; fileRef = CC220024 /* AdminAppointmentsView.swift */; };
+		CC110025 /* AdminSlotsView.swift in Sources */               = {isa = PBXBuildFile; fileRef = CC220025 /* AdminSlotsView.swift */; };
+		CC110026 /* Assets.xcassets in Resources */                  = {isa = PBXBuildFile; fileRef = CC220026 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CC220001 /* TattooTimeAppApp.swift */             = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TattooTimeAppApp.swift; sourceTree = "<group>"; };
+		CC220002 /* AppUser.swift */                      = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
+		CC220003 /* Appointment.swift */                  = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		CC220004 /* Slot.swift */                         = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slot.swift; sourceTree = "<group>"; };
+		CC220005 /* PricingRule.swift */                  = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricingRule.swift; sourceTree = "<group>"; };
+		CC220006 /* FirebaseConfig.swift */               = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseConfig.swift; sourceTree = "<group>"; };
+		CC220007 /* FirebaseAuthService.swift */          = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
+		CC220008 /* FirestoreService.swift */             = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
+		CC220009 /* AppointmentService.swift */           = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentService.swift; sourceTree = "<group>"; };
+		CC220010 /* SlotService.swift */                  = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotService.swift; sourceTree = "<group>"; };
+		CC220011 /* UserService.swift */                  = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		CC220012 /* AuthViewModel.swift */                = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		CC220013 /* AppointmentViewModel.swift */         = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentViewModel.swift; sourceTree = "<group>"; };
+		CC220014 /* BookingViewModel.swift */             = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewModel.swift; sourceTree = "<group>"; };
+		CC220015 /* AdminViewModel.swift */               = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewModel.swift; sourceTree = "<group>"; };
+		CC220016 /* DesignSystem.swift */                 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		CC220017 /* LoginView.swift */                    = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CC220018 /* RegisterView.swift */                 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		CC220019 /* MainTabView.swift */                  = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		CC220020 /* DashboardView.swift */                = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		CC220021 /* BookingView.swift */                  = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingView.swift; sourceTree = "<group>"; };
+		CC220022 /* MyAppointmentsView.swift */           = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppointmentsView.swift; sourceTree = "<group>"; };
+		CC220023 /* ProfileView.swift */                  = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		CC220024 /* AdminAppointmentsView.swift */        = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminAppointmentsView.swift; sourceTree = "<group>"; };
+		CC220025 /* AdminSlotsView.swift */               = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminSlotsView.swift; sourceTree = "<group>"; };
+		CC220026 /* Assets.xcassets */                    = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC220027 /* Info.plist */                         = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC220099 /* TattooTimeApp.app */                  = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TattooTimeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		CC330000 /* TattooTimeApp */ = {
+			isa = PBXGroup;
+			children = (
+				CC330001 /* TattooTimeApp */,
+				CC330099 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC330001 /* TattooTimeApp */ = {
+			isa = PBXGroup;
+			children = (
+				CC220001 /* TattooTimeAppApp.swift */,
+				CC220027 /* Info.plist */,
+				CC220026 /* Assets.xcassets */,
+				CC330002 /* Models */,
+				CC330003 /* Services */,
+				CC330004 /* ViewModels */,
+				CC330005 /* Views */,
+			);
+			path = TattooTimeApp;
+			sourceTree = "<group>";
+		};
+		CC330002 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CC220002 /* AppUser.swift */,
+				CC220003 /* Appointment.swift */,
+				CC220004 /* Slot.swift */,
+				CC220005 /* PricingRule.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CC330003 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CC220006 /* FirebaseConfig.swift */,
+				CC220007 /* FirebaseAuthService.swift */,
+				CC220008 /* FirestoreService.swift */,
+				CC220009 /* AppointmentService.swift */,
+				CC220010 /* SlotService.swift */,
+				CC220011 /* UserService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CC330004 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CC220012 /* AuthViewModel.swift */,
+				CC220013 /* AppointmentViewModel.swift */,
+				CC220014 /* BookingViewModel.swift */,
+				CC220015 /* AdminViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CC330005 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CC220016 /* DesignSystem.swift */,
+				CC220019 /* MainTabView.swift */,
+				CC330006 /* Auth */,
+				CC330007 /* Dashboard */,
+				CC330008 /* Booking */,
+				CC330009 /* Appointments */,
+				CC330010 /* Profile */,
+				CC330011 /* Admin */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CC330006 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				CC220017 /* LoginView.swift */,
+				CC220018 /* RegisterView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		CC330007 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				CC220020 /* DashboardView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		CC330008 /* Booking */ = {
+			isa = PBXGroup;
+			children = (
+				CC220021 /* BookingView.swift */,
+			);
+			path = Booking;
+			sourceTree = "<group>";
+		};
+		CC330009 /* Appointments */ = {
+			isa = PBXGroup;
+			children = (
+				CC220022 /* MyAppointmentsView.swift */,
+			);
+			path = Appointments;
+			sourceTree = "<group>";
+		};
+		CC330010 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				CC220023 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		CC330011 /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				CC220024 /* AdminAppointmentsView.swift */,
+				CC220025 /* AdminSlotsView.swift */,
+			);
+			path = Admin;
+			sourceTree = "<group>";
+		};
+		CC330099 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC220099 /* TattooTimeApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC440000 /* TattooTimeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC880000 /* Build configuration list for PBXNativeTarget "TattooTimeApp" */;
+			buildPhases = (
+				CC660001 /* Sources */,
+				CC660002 /* Resources */,
+				CC660003 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TattooTimeApp;
+			productName = TattooTimeApp;
+			productReference = CC220099 /* TattooTimeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC550000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					CC440000 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = CC880001 /* Build configuration list for PBXProject "TattooTimeApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = de;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				de,
+				en,
+				Base,
+			);
+			mainGroup = CC330000;
+			productRefGroup = CC330099 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC440000 /* TattooTimeApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC660002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC110026 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC660001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC110001 /* TattooTimeAppApp.swift in Sources */,
+				CC110002 /* AppUser.swift in Sources */,
+				CC110003 /* Appointment.swift in Sources */,
+				CC110004 /* Slot.swift in Sources */,
+				CC110005 /* PricingRule.swift in Sources */,
+				CC110006 /* FirebaseConfig.swift in Sources */,
+				CC110007 /* FirebaseAuthService.swift in Sources */,
+				CC110008 /* FirestoreService.swift in Sources */,
+				CC110009 /* AppointmentService.swift in Sources */,
+				CC110010 /* SlotService.swift in Sources */,
+				CC110011 /* UserService.swift in Sources */,
+				CC110012 /* AuthViewModel.swift in Sources */,
+				CC110013 /* AppointmentViewModel.swift in Sources */,
+				CC110014 /* BookingViewModel.swift in Sources */,
+				CC110015 /* AdminViewModel.swift in Sources */,
+				CC110016 /* DesignSystem.swift in Sources */,
+				CC110017 /* LoginView.swift in Sources */,
+				CC110018 /* RegisterView.swift in Sources */,
+				CC110019 /* MainTabView.swift in Sources */,
+				CC110020 /* DashboardView.swift in Sources */,
+				CC110021 /* BookingView.swift in Sources */,
+				CC110022 /* MyAppointmentsView.swift in Sources */,
+				CC110023 /* ProfileView.swift in Sources */,
+				CC110024 /* AdminAppointmentsView.swift in Sources */,
+				CC110025 /* AdminSlotsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC660003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CC770001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC770002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC770003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TattooTimeApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.tattootime.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CC770004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TattooTimeApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.tattootime.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC880000 /* Build configuration list for PBXNativeTarget "TattooTimeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC770003 /* Debug */,
+				CC770004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC880001 /* Build configuration list for PBXProject "TattooTimeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC770001 /* Debug */,
+				CC770002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = CC550000 /* Project object */;
+}
